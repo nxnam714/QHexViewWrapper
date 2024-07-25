@@ -1,0 +1,21 @@
+<typesystem package="com.trolltech.qt.HexView">
+  <object-type name="QHexView"/>
+  <!-- <object-type name="HexFindDialog"/> -->
+  <object-type name="QHexCursor"/>
+  <object-type name="QHexMetadata"/>
+  <object-type name="QDeviceBuffer"/>
+  <object-type name="QMappedFileBuffer"/>
+  <object-type name="QMemoryBuffer"/>
+  <object-type name="QMemoryRefBuffer"/>
+  <object-type name="QHexViewWrapper"/>
+
+  <enum-type name="QHexView::CopyMode"/>
+  <!-- <enum-type name="HexFindDialog::Type"/> -->
+  <enum-type name="QHexCursor::Mode"/>
+  <enum-type name="QHexDocument::ChangeReason"/>
+  <enum-type name="QHexDocument::FindDirection"/>
+  <enum-type name="QHexFindMode"/>
+  <enum-type name="QHexFindDirection"/>
+  <enum-type name="QHexArea"/>
+
+</typesystem>

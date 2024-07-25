@@ -1,0 +1,17 @@
+<typesystem>
+  <load-typesystem name="../../pythonqt/generator/typesystem_core.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_gui.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_sql.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_opengl.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_svg.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_network.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_xml.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_webkit.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_webenginewidgets.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_xmlpatterns.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_uitools.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_multimedia.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_qml.xml" generate="no" />
+  <load-typesystem name="../../pythonqt/generator/typesystem_quick.xml" generate="no" />
+  <load-typesystem name="typesystem_qhexview.xml" generate="yes" />
+</typesystem>

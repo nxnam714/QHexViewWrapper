@@ -37,4 +37,4 @@ DEPENDPATH += $$PWD/../../pythonqt/src
 
 include ( ../../pythonqt/build/python.prf )
 
-include(com_trolltech_qt_hexview.pri)
+include( ../generated_cpp/com_trolltech_qt_hexview/com_trolltech_qt_hexview.pri )

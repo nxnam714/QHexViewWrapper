@@ -1,2 +1,5 @@
 build-*/
+.preprocessed.tmp
 *.pro.user
+mjb_rejected_*.log
+generator/out.txt
