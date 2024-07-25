@@ -13,20 +13,15 @@ DESTDIR           = ../bin
 
 QT += widgets
 
-HEADERS += \
-  $$PWD/QHexViewWrapper.h
+INCLUDEPATH += $$PWD/../QHexView \
+  $$PWD/../QHexView/model \
+  $$PWD/../QHexView/model/buffer \
+  $$PWD/../QHexView/model/commands \
 
 SOURCES += \
   $$PWD/main.cpp \
-  $$PWD/QHexViewWrapper.cpp
 
 RESOURCES += QHexViewWrapper.qrc
-
-# win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../QHexView/release/libQHexView.a
-# else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../QHexView/debug/libQHexView.a
-# else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../QHexView/release/QHexView.lib
-# else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../QHexView/debug/QHexView.lib
-# else:unix: PRE_TARGETDEPS += $$OUT_PWD/../QHexView/libQHexView.a
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../QHexView/release/ -lQHexView
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../QHexView/debug/ -lQHexView
@@ -41,3 +36,5 @@ INCLUDEPATH += $$PWD/../../pythonqt/src
 DEPENDPATH += $$PWD/../../pythonqt/src
 
 include ( ../../pythonqt/build/python.prf )
+
+include(com_trolltech_qt_hexview.pri)

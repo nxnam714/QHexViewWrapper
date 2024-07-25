@@ -1,4 +1,4 @@
-from PythonQt.QHexView import *
+from PythonQt.QtHexView import *
 
 print("QHexView wrapped by decorators")
 

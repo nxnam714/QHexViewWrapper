@@ -1,9 +1,12 @@
 
+#include <QApplication>
+
 #include "PythonQt.h"
 #include "gui/PythonQtScriptingConsole.h"
-#include "QHexViewWrapper.h"
 
-#include <QApplication>
+
+void PythonQt_init_QtHexView(PyObject*);
+
 
 int main( int argc, char **argv )
 {
@@ -15,7 +18,7 @@ int main( int argc, char **argv )
   PythonQtScriptingConsole console(NULL, mainContext);
 
   // register the new object as a known classname and add it's wrapper object
-  PythonQt::self()->registerCPPClass("QHexView", "","QHexView", PythonQtCreateObject<QHexViewWrapper>);
+  PythonQt_init_QtHexView(nullptr);
 
   mainContext.evalFile(":example.py");
 
